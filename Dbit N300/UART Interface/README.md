@@ -34,15 +34,20 @@ _The full bootlog has been added to this directory for further analysis_
 
 **Bootloader**
 
-`RealTek(RTL8196E)at 2025.08.12-13:39+0800 v3.4.11E [16bit](380MHz)`
+```
+RealTek(RTL8196E)at 2025.08.12-13:39+0800 v3.4.11E [16bit](380MHz)
+```
 
 **Linux Version**
 
-`Linux version 3.10.90 (jenkins@muserver) (gcc version 4.6.4 (Realtek RSDK-4.6.4 Build 2080) ) #en32 Tue Aug 12 13:42:09 CST 2025`
-
+```
+Linux version 3.10.90 (jenkins@muserver) (gcc version 4.6.4 (Realtek RSDK-4.6.4 Build 2080) ) #en32 Tue Aug 12 13:42:09 CST 2025
+```
 **Filesystem Structure**
 
-`squashfs: version 4.0 (2009/01/31) Phillip Lougher`
+```
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+```
 
 **Partitions**
 
