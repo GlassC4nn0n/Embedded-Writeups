@@ -18,3 +18,45 @@ There are two main approaches when determining the baud rate: Use a signal analy
 Embedded systems usually use similar baud rates across different devices. If you don't have the patience for logic analysis, you can simply choose between these common baud rates and will likely find the correct one:
 
 4800, 9600, 19200, 38400, 57600, 115200, 230400, 460800, and 921600
+_______
+
+**Connecting via UART**
+
+We use the following command to open a terminal on the target
+
+`sudo picocom -b 38400 /dev/ttyACM0 --logfile N300.log`
+
+The terminal is, unfortunately, non-interactive. However, the bootlog does give us some useful information about the system.
+_________
+
+# Findings
+_The full bootlog has been added to this directory for further analysis_
+
+**Bootloader**
+
+`RealTek(RTL8196E)at 2025.08.12-13:39+0800 v3.4.11E [16bit](380MHz)`
+
+**Linux Version**
+
+`Linux version 3.10.90 (jenkins@muserver) (gcc version 4.6.4 (Realtek RSDK-4.6.4 Build 2080) ) #en32 Tue Aug 12 13:42:09 CST 2025`
+
+**Filesystem Structure**
+
+`squashfs: version 4.0 (2009/01/31) Phillip Lougher`
+
+**Partitions**
+
+```
+Creating 4 MTD partitions on "flash_bank_1":  
+0x000000000000-0x000000210000 : "boot+cfg+linux"  
+0x000000210000-0x0000003c0000 : "rootfs"  
+0x0000003c0000-0x0000003e0000 : "cwmp transfer"  
+0x0000003e0000-0x000000400000 : "cwmp notification"
+```
+
+**Boa Webserver**
+
+```
+boa: server version Boa  
+boa: server built Aug 1type:3, enable:0, percent0 
+```
