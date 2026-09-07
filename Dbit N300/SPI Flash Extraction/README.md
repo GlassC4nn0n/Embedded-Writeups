@@ -10,3 +10,11 @@ Using a SOP8 to DIP8 chip adapter, we can completely isolate the chip and pull t
 
 **IMSProg Settings**
 
+<img width="978" height="683" alt="IMSProg_N300" src="https://github.com/user-attachments/assets/26ba69a1-1703-42e5-8691-817292de034b" />
+
+We save the extracted firmware to `N300_firmware.bin`
+____
+
+**Binwalk**
+
+<img width="1167" height="548" alt="binwalk_id_N300" src="https://github.com/user-attachments/assets/8a233d5b-a611-41eb-9171-94d241f3495e" />
