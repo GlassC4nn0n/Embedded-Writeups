@@ -1,0 +1,5 @@
+Three chips identified on the PCB:
+
+- RTL8196E (Router network processor)
+- RTL8192ER (802.11bgn 2.4G single-chip)
+- AC2502 25Q32BVSIG (Flash memory chip)
