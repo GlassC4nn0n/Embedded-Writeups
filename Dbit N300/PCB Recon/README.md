@@ -1,6 +1,7 @@
 The PCB board has three noteworthy chips and a UART interface 
 
 **Board Overview**
+
 <img width="3072" height="4080" alt="N300_board" src="https://github.com/user-attachments/assets/826d13ff-4c69-4a66-b335-e51fd24da3e7" />
 
 _________
